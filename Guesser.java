@@ -11,15 +11,15 @@ public class Guesser {
 		  return "low: " + low + " high: " + high;
 		}
 	  // Write the constructor below this line.
-	  public Guesser(int lowValue, int highValue) {
-		  this.low = lowValue;
-		  this.high = highValue;
-		  
-		  if (lowValue > highValue) {
+	  public Guesser(int a, int b) {
+		  this.low = a;
+		  this.high = b;
+	  
+		  if (a > b) {
 		  throw new IllegalArgumentException("The first parameter must be lower than the second parameter");
+	
 		  }
-		  }
-		  
+	  } 
 
 	  /*
 	   * Task 2. Complete the start() method, so that
@@ -41,7 +41,7 @@ public class Guesser {
 	    System.out.println("Please answer T for true, and F for false.\n");
 	  }
 
-
+	  @SuppressWarnings("resource")
 	  private String getReply(){
 		Scanner scanner = new Scanner(System.in);
 		String reply = scanner.next();
