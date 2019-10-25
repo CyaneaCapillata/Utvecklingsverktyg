@@ -6,6 +6,9 @@ public class GuessingGame {
 		
 		Guesser louise = new Guesser(0, 1000);
 
+		louise.start();
 	}
+	
+	
 
 }
